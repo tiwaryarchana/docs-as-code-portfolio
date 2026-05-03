@@ -1,28 +1,62 @@
-site_name: Docs as Code Portfolio
+site_name: NetSecure IAM Documentation
+site_description: Identity and Access Management product documentation for NetSecure IAM 5.x
+site_author: NetSecure Documentation Team
 
 theme:
   name: material
+  palette:
+    primary: indigo
+    accent: blue
   features:
     - navigation.tabs
+    - navigation.sections
     - navigation.instant
+    - navigation.top
+    - search.highlight
     - content.code.copy
     - content.action.edit
-    - search.highlight
 
 nav:
   - Home: index.md
-  - Getting Started: getting-started.md
-  - Architecture: architecture.md
-  - Downloads: downloads.md
+  - Overview:
+    - Product Overview: overview/product-overview.md
+    - Key Concepts: overview/key-concepts.md
+    - Architecture: overview/architecture.md
+  - Authentication:
+    - SSO Configuration: authentication/sso-configuration.md
+    - SAML 2.0 Setup: authentication/saml-setup.md
+    - MFA Setup: authentication/mfa-setup.md
+  - Authorization:
+    - RBAC Overview: authorization/rbac-overview.md
+    - Creating Roles: authorization/creating-roles.md
+    - Managing Policies: authorization/managing-policies.md
+  - Administration:
+    - User Management: administration/user-management.md
+    - Audit Logs: administration/audit-logs.md
+  - Troubleshooting:
+    - Common Errors: troubleshooting/common-errors.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+
 plugins:
   - search
   - with-pdf:
       cover: true
-      cover_title: Docs-as-Code Portfolio
-      cover_subtitle: Technical Documentation
+      cover_title: NetSecure IAM Documentation
+      cover_subtitle: Identity and Access Management 5.x
       toc_level: 2
-      output_path: pdf/docs-as-code.pdf
+      output_path: pdf/iam-docs.pdf
+
 extra_css:
   - stylesheets/extra.css
   - stylesheets/pdf.css
-  
