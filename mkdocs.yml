@@ -1,0 +1,9 @@
+site_name: Docs as Code Portfolio
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Architecture: architecture.md
