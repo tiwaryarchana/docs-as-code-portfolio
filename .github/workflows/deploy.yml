@@ -13,18 +13,34 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # Setup Python
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: 3.x
 
+      # Install Linux libraries (required for WeasyPrint PDF)
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libcairo2 \
+            libpango-1.0-0 \
+            libgdk-pixbuf2.0-0
+
+      # Install MkDocs + plugins
       - name: Install dependencies
         run: |
-          pip install mkdocs-material
+          pip install mkdocs-material mkdocs-with-pdf weasyprint
 
-      - name: Build and deploy
-        run: |
-          mkdocs gh-deploy --force
+      # ✅ Build site (THIS is where your step goes)
+      - name: Build documentation
+        run: mkdocs build
+
+      # ✅ Deploy site
+      - name: Deploy site
+        run: mkdocs gh-deploy --force

@@ -1,0 +1,30 @@
+# Python virtual environment
+venv/
+.env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# MkDocs build output
+site/
+
+# MkDocs cache
+.cache/
+
+# VS Code / IDE
+.vscode/
+.idea/
+
+# Vale
+.vale/
+styles/
+
+# Logs
+*.log
+
+# GitHub Pages temp
+*.tmp

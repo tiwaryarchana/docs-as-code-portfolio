@@ -785,3 +785,20 @@ body {
   .md-content pre     { font-size: 0.8125rem; }
   .md-content table   { font-size: 0.8125rem; }
 }
+/* Better margins for printing */
+@page {
+  size: A4;
+  margin: 2cm;
+}
+
+/* Hide navigation */
+.md-header,
+.md-footer,
+.md-sidebar {
+  display: none;
+}
+
+/* Improve headings */
+h1 {
+  page-break-before: always;
+}
