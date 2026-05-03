@@ -39,15 +39,12 @@ jobs:
         run: |
           pip install mkdocs-material mkdocs-with-pdf weasyprint
 
-      - name: Build documentation
-        env:
-          ENABLE_PDF_EXPORT: 1
-        run: mkdocs build --site-dir site
-
-      - name: Verify PDF was generated
+      - name: Build documentation with PDF
         run: |
-          echo "Contents of site/pdf/:"
-          ls -la site/pdf/ || echo "WARNING: site/pdf/ not found"
+          export ENABLE_PDF_EXPORT=1
+          mkdocs build --site-dir site
+          echo "--- Verifying PDF ---"
+          ls -lh site/pdf/ || echo "ERROR: site/pdf/ not found"
 
       - name: Deploy to GitHub Pages
-        run: mkdocs gh-deploy --force --site-dir site
+        run: mkdocs gh-deploy --force --no-build --site-dir site
