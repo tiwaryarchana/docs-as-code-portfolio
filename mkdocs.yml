@@ -2,6 +2,12 @@ site_name: Docs as Code Portfolio
 
 theme:
   name: material
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - content.code.copy
+    - content.action.edit
+    - search.highlight
 
 nav:
   - Home: index.md
