@@ -35,6 +35,8 @@ nav:
     - Audit Logs: administration/audit-logs.md
   - Troubleshooting:
     - Common Errors: troubleshooting/common-errors.md
+  - Style Guide:
+    - Writing Guidelines: style-guide/writing-guidelines.md
 
 markdown_extensions:
   - admonition

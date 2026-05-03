@@ -74,7 +74,6 @@ This style guide defines standards for all documentation authored and maintained
 - README files and contributing guides
 - Internal wikis and runbooks
 
-This guide does **not** apply to code comments, commit messages, or pull request descriptions (see the [Contributing Guide](CONTRIBUTING.md) for those conventions).
 
 ---
 
