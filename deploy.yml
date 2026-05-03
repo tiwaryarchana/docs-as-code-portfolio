@@ -7,16 +7,13 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
-# Allow only one deployment at a time
 concurrency:
   group: "pages"
   cancel-in-progress: true
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -47,18 +44,10 @@ jobs:
           ENABLE_PDF_EXPORT: 1
         run: mkdocs build --site-dir site
 
-      - name: Upload site artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: site
+      - name: Verify PDF was generated
+        run: |
+          echo "Contents of site/pdf/:"
+          ls -la site/pdf/ || echo "WARNING: site/pdf/ not found"
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        run: mkdocs gh-deploy --force --site-dir site
