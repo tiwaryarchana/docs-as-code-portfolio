@@ -1,16 +1,28 @@
 name: Deploy Docs
+
 on:
   push:
     branches:
       - main
+
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+# Allow only one deployment at a time
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -23,16 +35,30 @@ jobs:
           sudo apt-get install -y \
             libcairo2 \
             libpango-1.0-0 \
-            libgdk-pixbuf2.0-0
+            libpangocairo-1.0-0 \
+            libgdk-pixbuf-2.0-0
 
-      - name: Install dependencies
+      - name: Install Python dependencies
         run: |
           pip install mkdocs-material mkdocs-with-pdf weasyprint
 
       - name: Build documentation
         env:
           ENABLE_PDF_EXPORT: 1
-        run: mkdocs build
+        run: mkdocs build --site-dir site
 
-      - name: Deploy site
-        run: mkdocs gh-deploy --force
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
