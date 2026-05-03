@@ -13,3 +13,11 @@ nav:
   - Home: index.md
   - Getting Started: getting-started.md
   - Architecture: architecture.md
+plugins:
+  - search
+  - with-pdf:
+      cover: true
+      cover_title: Docs-as-Code Portfolio
+      cover_subtitle: Technical Documentation
+      toc_level: 2
+      output_path: pdf/docs-as-code.pdf
