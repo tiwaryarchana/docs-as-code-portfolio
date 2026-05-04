@@ -1,6 +1,7 @@
 # IdentraCore IAM Documentation
 
 Welcome to the IdentraCore Identity and Access Management (IAM) documentation. This site covers configuration, administration, and troubleshooting for IdentraCore IAM 5.x.
+[📄 Download PDF](pdf/iam-docs.pdf){ .md-button .md-button--primary }
 
 ## What is IdentraCore IAM?
 
