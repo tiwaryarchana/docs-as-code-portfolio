@@ -8,39 +8,44 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
+    env:
+      ENABLE_PDF_EXPORT: 1
     steps:
-      # Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      # Setup Python
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: 3.x
 
-      # Install Linux libraries (required for WeasyPrint PDF)
       - name: Install system dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y \
             libcairo2 \
             libpango-1.0-0 \
-            libgdk-pixbuf2.0-0
+            libpangocairo-1.0-0 \
+            libgdk-pixbuf-2.0-0
 
-      # Install MkDocs + plugins
-      - name: Install dependencies
+      - name: Install Python dependencies
         run: |
           pip install mkdocs-material mkdocs-with-pdf weasyprint
 
-      # ✅ Build site (THIS is where your step goes)
-      - name: Build documentation
-        run: mkdocs build
+      - name: Build documentation with PDF
+        run: |
+          mkdocs build --site-dir site
+          echo "--- Verifying PDF ---"
+          ls -lh site/pdf/ || echo "ERROR: site/pdf/ not found"
 
-      # ✅ Deploy site
-      - name: Deploy site
-        run: mkdocs gh-deploy --force
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force --no-build --site-dir site
