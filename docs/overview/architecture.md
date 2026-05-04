@@ -2,7 +2,7 @@
 
 ## Component Overview
 
-NetSecure IAM consists of the following core components:
+IdentraCore IAM consists of the following core components:
 
 | Component | Description |
 |---|---|
@@ -18,10 +18,10 @@ NetSecure IAM consists of the following core components:
 The following describes a typical SSO login flow using SAML 2.0:
 
 1. User attempts to access a connected application (the Service Provider).
-2. The SP redirects the user to NetSecure IAM with a SAML authentication request.
-3. NetSecure IAM presents the login page.
+2. The SP redirects the user to IdentraCore IAM with a SAML authentication request.
+3. IdentraCore IAM presents the login page.
 4. The user enters credentials. If MFA is enabled, a second factor is requested.
-5. NetSecure IAM validates credentials and generates a SAML assertion.
+5. IdentraCore IAM validates credentials and generates a SAML assertion.
 6. The assertion is posted back to the SP's Assertion Consumer Service (ACS) URL.
 7. The SP validates the assertion and creates a user session.
 

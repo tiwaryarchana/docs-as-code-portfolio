@@ -1,11 +1,11 @@
 # Key Concepts
 
-Understanding these terms is essential before configuring NetSecure IAM.
+Understanding these terms is essential before configuring IdentraCore IAM.
 
 ## Identity and Authentication
 
 **Identity Provider (IdP)**
-The system that stores and verifies user identities. NetSecure IAM can act as an IdP, or connect to an external IdP such as Active Directory, Okta, or Azure AD.
+The system that stores and verifies user identities. IdentraCore IAM can act as an IdP, or connect to an external IdP such as Active Directory, Okta, or Azure AD.
 
 **Service Provider (SP)**
 An application that relies on the IdP to authenticate users. When a user tries to access an SP, they are redirected to the IdP for authentication.

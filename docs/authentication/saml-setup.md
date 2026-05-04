@@ -1,17 +1,17 @@
 # SAML 2.0 Setup
 
-This topic describes how to configure SAML 2.0 federation between NetSecure IAM (as the Identity Provider) and an external application (as the Service Provider).
+This topic describes how to configure SAML 2.0 federation between IdentraCore IAM (as the Identity Provider) and an external application (as the Service Provider).
 
 ## Before You Begin
 
 Collect the following values from your Service Provider:
 
-- **ACS URL** (Assertion Consumer Service URL) — where NetSecure IAM posts the SAML response
+- **ACS URL** (Assertion Consumer Service URL) — where IdentraCore IAM posts the SAML response
 - **Entity ID** (SP Entity ID) — unique identifier for the SP
 - **NameID Format** — typically `emailAddress` or `persistent`
 - **SP Certificate** (optional) — required if the SP expects signed requests
 
-## NetSecure IAM SAML Endpoints
+## IdentraCore IAM SAML Endpoints
 
 Provide these values to your SP administrator:
 

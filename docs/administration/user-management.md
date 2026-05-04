@@ -1,6 +1,6 @@
 # User Management
 
-This topic describes how to create, modify, and deactivate user accounts in NetSecure IAM.
+This topic describes how to create, modify, and deactivate user accounts in IdentraCore IAM.
 
 ## User Lifecycle
 

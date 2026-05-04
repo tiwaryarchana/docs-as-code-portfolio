@@ -1,6 +1,6 @@
 # Audit Logs
 
-NetSecure IAM records all authentication events, administrative actions, and policy changes. Audit logs are retained for 12 months by default and can be exported for long-term storage.
+IdentraCore IAM records all authentication events, administrative actions, and policy changes. Audit logs are retained for 12 months by default and can be exported for long-term storage.
 
 ## What Is Logged
 

@@ -1,12 +1,12 @@
 # SSO Configuration
 
-Single Sign-On (SSO) allows users to authenticate once with NetSecure IAM and access all connected applications without re-entering credentials.
+Single Sign-On (SSO) allows users to authenticate once with IdentraCore IAM and access all connected applications without re-entering credentials.
 
 ## Prerequisites
 
 Before configuring SSO, ensure you have:
 
-- Administrator access to the NetSecure IAM Admin Console
+- Administrator access to the IdentraCore IAM Admin Console
 - Administrator access to the application you want to connect
 - The application's SP metadata URL or metadata XML file
 
@@ -22,7 +22,7 @@ Before configuring SSO, ensure you have:
 
 === "Legacy (Header-Based)"
 
-    For applications that do not support SAML or OIDC, NetSecure IAM supports header-based SSO via the Access Gateway component.
+    For applications that do not support SAML or OIDC, IdentraCore IAM supports header-based SSO via the Access Gateway component.
 
 ## Adding an Application
 
@@ -37,7 +37,7 @@ Before configuring SSO, ensure you have:
 
 Most applications require specific user attributes in the SAML assertion. Common mappings:
 
-| SAML Attribute | NetSecure IAM Source |
+| SAML Attribute | IdentraCore IAM Source |
 |---|---|
 | `NameID` | `user.email` |
 | `firstName` | `user.firstName` |
@@ -54,7 +54,7 @@ After saving the configuration:
 
 1. Open a private/incognito browser window.
 2. Navigate to your application's login URL.
-3. You should be redirected to the NetSecure IAM login page.
+3. You should be redirected to the IdentraCore IAM login page.
 4. Log in with a test user account.
 5. Verify that you are redirected back to the application and logged in successfully.
 

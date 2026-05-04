@@ -1,13 +1,13 @@
 # MFA Setup
 
-Multi-Factor Authentication (MFA) adds a second layer of verification after password authentication. NetSecure IAM supports several MFA methods.
+Multi-Factor Authentication (MFA) adds a second layer of verification after password authentication. IdentraCore IAM supports several MFA methods.
 
 ## Supported MFA Methods
 
 | Method | Description | Recommended For |
 |---|---|---|
 | **TOTP** | Time-based one-time passwords via authenticator apps (Google Authenticator, Authy) | Most users |
-| **Push Notification** | Approve login via the NetSecure mobile app | High-volume users |
+| **Push Notification** | Approve login via the IdentraCore mobile app | High-volume users |
 | **Hardware Token (FIDO2)** | Physical security keys (YubiKey, etc.) | Privileged accounts |
 | **SMS OTP** | One-time code via SMS | Fallback only — not recommended as primary |
 

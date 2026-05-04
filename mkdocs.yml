@@ -1,6 +1,6 @@
-site_name: NetSecure IAM Documentation
-site_description: Identity and Access Management product documentation for NetSecure IAM 5.x
-site_author: NetSecure Documentation Team
+site_name: IdentraCore IAM Documentation
+site_description: Identity and Access Management product documentation for IdentraCore IAM 5.x
+site_author: IdentraCore Documentation Team
 
 theme:
   name: material
@@ -10,11 +10,9 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
-    - navigation.instant
     - navigation.top
     - search.highlight
     - content.code.copy
-    - content.action.edit
 
 nav:
   - Home: index.md
@@ -35,17 +33,11 @@ nav:
     - Audit Logs: administration/audit-logs.md
   - Troubleshooting:
     - Common Errors: troubleshooting/common-errors.md
-  - Style Guide:
-    - Writing Guidelines: style-guide/writing-guidelines.md
 
 markdown_extensions:
   - admonition
   - pymdownx.details
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.superfences
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
@@ -53,17 +45,3 @@ markdown_extensions:
       alternate_style: true
   - tables
   - attr_list
-
-plugins:
-  - search
-  - with-pdf:
-      cover: true
-      cover_title: NetSecure IAM Documentation
-      cover_subtitle: Identity and Access Management 5.x
-      toc_level: 2
-      output_path: pdf/iam-docs.pdf
-      enabled_if_env: ENABLE_PDF_EXPORT
-
-extra_css:
-  - stylesheets/extra.css
-  - stylesheets/pdf.css

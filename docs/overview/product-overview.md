@@ -1,6 +1,6 @@
 # Product Overview
 
-NetSecure IAM is an enterprise-grade identity and access management platform designed for organizations managing thousands of users across cloud, on-premises, and hybrid environments.
+IdentraCore IAM is an enterprise-grade identity and access management platform designed for organizations managing thousands of users across cloud, on-premises, and hybrid environments.
 
 ## Core Capabilities
 
@@ -21,9 +21,9 @@ NetSecure IAM is an enterprise-grade identity and access management platform des
 
 ## Deployment Options
 
-NetSecure IAM can be deployed in three modes:
+IdentraCore IAM can be deployed in three modes:
 
-- **SaaS:** Hosted and managed by NetSecure. Recommended for most organizations.
+- **SaaS:** Hosted and managed by IdentraCore. Recommended for most organizations.
 - **Private Cloud:** Deployed in your cloud tenant (AWS, Azure, GCP).
 - **On-Premises:** Installed on your own infrastructure for air-gapped environments.
 

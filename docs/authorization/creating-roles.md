@@ -1,6 +1,6 @@
 # Creating Roles
 
-This topic describes how to create and manage custom roles in NetSecure IAM.
+This topic describes how to create and manage custom roles in IdentraCore IAM.
 
 ## Before You Begin
 

@@ -1,10 +1,10 @@
-# NetSecure IAM Documentation
+# IdentraCore IAM Documentation
 
-Welcome to the NetSecure Identity and Access Management (IAM) documentation. This site covers configuration, administration, and troubleshooting for NetSecure IAM 5.x.
+Welcome to the IdentraCore Identity and Access Management (IAM) documentation. This site covers configuration, administration, and troubleshooting for IdentraCore IAM 5.x.
 
-## What is NetSecure IAM?
+## What is IdentraCore IAM?
 
-NetSecure IAM is an enterprise identity platform that enables organizations to manage user identities, control access to applications and resources, and enforce security policies across hybrid environments.
+IdentraCore IAM is an enterprise identity platform that enables organizations to manage user identities, control access to applications and resources, and enforce security policies across hybrid environments.
 
 ## Documentation Sections
 
@@ -18,7 +18,7 @@ NetSecure IAM is an enterprise identity platform that enables organizations to m
 
 ## Quick Start
 
-If you are setting up NetSecure IAM for the first time:
+If you are setting up IdentraCore IAM for the first time:
 
 1. Review the [Product Overview](overview/product-overview.md) to understand the platform.
 2. Follow the [SSO Configuration](authentication/sso-configuration.md) guide to connect your identity provider.
@@ -26,4 +26,4 @@ If you are setting up NetSecure IAM for the first time:
 4. Create your first users in [User Management](administration/user-management.md).
 
 !!! note "Version"
-    This documentation applies to NetSecure IAM **5.x**. For earlier versions, contact support.
+    This documentation applies to IdentraCore IAM **5.x**. For earlier versions, contact support.

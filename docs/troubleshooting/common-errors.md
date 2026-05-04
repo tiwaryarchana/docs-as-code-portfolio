@@ -11,7 +11,7 @@ This topic lists frequently encountered errors and their resolution steps.
 **Message:** `The SAML response could not be validated.`
 
 **Causes:**
-- The SP certificate has expired or does not match the configured certificate in NetSecure IAM.
+- The SP certificate has expired or does not match the configured certificate in IdentraCore IAM.
 - The assertion has expired (timestamp skew between IdP and SP clocks).
 - The ACS URL in the SAML request does not match the configured ACS URL.
 
@@ -59,9 +59,9 @@ Review recent failed login events in the audit log to determine if the lockout w
 
 **Message:** `SCIM PATCH request failed: user not found.`
 
-**Cause:** The provisioning system is sending requests for a user whose account has been deleted from NetSecure IAM.
+**Cause:** The provisioning system is sending requests for a user whose account has been deleted from IdentraCore IAM.
 
-**Resolution:** Check whether the user exists in NetSecure IAM. If the account was deleted, re-provision the user or clear the external ID mapping in the source system.
+**Resolution:** Check whether the user exists in IdentraCore IAM. If the account was deleted, re-provision the user or clear the external ID mapping in the source system.
 
 ---
 

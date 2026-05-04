@@ -25,7 +25,7 @@ Access policies define the conditions under which users can access resources. Po
 
 ## Policy Evaluation Order
 
-When multiple policies apply to a request, NetSecure IAM evaluates them in this order:
+When multiple policies apply to a request, IdentraCore IAM evaluates them in this order:
 
 1. **Explicit Deny** — any policy with a Deny effect takes precedence.
 2. **Explicit Allow** — if no Deny applies, an Allow grants access.

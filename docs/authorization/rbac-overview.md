@@ -1,6 +1,6 @@
 # RBAC Overview
 
-Role-Based Access Control (RBAC) is the primary authorization model in NetSecure IAM. Access to resources is granted through roles, not directly to individual users.
+Role-Based Access Control (RBAC) is the primary authorization model in IdentraCore IAM. Access to resources is granted through roles, not directly to individual users.
 
 ## How RBAC Works
 
@@ -32,7 +32,7 @@ The link between a user (or group) and a role. Assignments can include condition
 
 ## Default Roles
 
-NetSecure IAM includes the following built-in roles:
+IdentraCore IAM includes the following built-in roles:
 
 | Role | Description |
 |---|---|
