@@ -27,4 +27,4 @@ If you are setting up IdentraCore IAM for the first time:
 4. Create your first users in [User Management](administration/user-management.md).
 
 !!! note "Version"
-    This documentation applies to IdentraCore IAM **v5.x**. For earlier versions, contact support.
+    This documentation applies to IdentraCore IAM **v7.x**. For earlier versions, contact support.
