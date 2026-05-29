@@ -74,3 +74,5 @@ When a user leaves the organization:
 
 !!! warning
     Do not delete a user account immediately upon offboarding. Retain the account in Deactivated state to preserve audit trail and access history.
+
+## A New Section
