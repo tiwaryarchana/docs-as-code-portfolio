@@ -10,7 +10,7 @@ IdentraCore IAM is an enterprise identity platform that enables organizations to
 ## Documentation Sections
 
 | Section | Description |
-|---|---|
+| --- | --- |
 | [Overview](overview/product-overview.md) | Product capabilities, key concepts, and architecture |
 | [Authentication](authentication/sso-configuration.md) | SSO, SAML, and MFA configuration |
 | [Authorization](authorization/rbac-overview.md) | Role-based access control and policy management |
