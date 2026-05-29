@@ -9,7 +9,7 @@ This topic describes how to create and manage custom roles in IdentraCore IAM.
 
 ## Creating a Custom Role
 
-1. In the Admin Console, go to **Authorization → Roles → Create Role**.
+1. In the Administration Console, go to **Authorization → Roles → Create Role**.
 2. Enter a **Role Name**. Use lowercase with hyphens: `finance-read-only`, `vendor-portal-user`.
 3. Enter a **Description** that explains the job function this role supports.
 4. Under **Permissions**, select the permissions to include.
