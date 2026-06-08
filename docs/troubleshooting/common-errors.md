@@ -15,9 +15,9 @@ This topic lists encountered errors and their resolution steps.
 - The assertion has expired (timestamp skew between IdP and SP clocks).
 - The ACS URL in the SAML request does not match the configured ACS URL.
 
-**Workaround:**
-1. Check the SP certificate: **Applications → [App] → SAML Settings → SP Certificate**.
-2. Verify that the system clocks on both IdP and SP are synchronized (NTP recommended). Timestamps must be within 5 minutes.
+**Workaround:** <br>
+1. Check the SP certificate: **Applications → [App] → SAML Settings → SP Certificate**.  <br>
+2. Verify that the system clocks on both IdP and SP are synchronized (NTP recommended). Timestamps must be within 3 minutes. <br>
 3. Confirm the ACS URL matches exactly, including trailing slashes.
 
 ---
