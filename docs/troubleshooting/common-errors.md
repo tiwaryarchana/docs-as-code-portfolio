@@ -26,8 +26,9 @@ This topic lists encountered errors and their resolution steps.
 
 **Message:** `NameID format in request does not match configured format.`
 
-**Resolution:**
-Go to **Applications → [App] → SAML Settings → NameID Format** and change it to match the format the SP is requesting. Common formats: `emailAddress`, `persistent`, `transient`.
+**Workaround:**
+1. Go to **Applications → [App] → SAML Settings → NameID Format** <br>
+2. Change it to match the format the SP is requesting. Common formats: `emailAddress`, `persistent`, `transient`.
 
 ---
 
