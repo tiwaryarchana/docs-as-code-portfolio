@@ -1,4 +1,4 @@
-# MFA Setup
+# Multi-Factor Authentication
 
 Multi-Factor Authentication (MFA) adds a second layer of verification after password authentication. IdentraCore IAM supports several MFA methods.
 
