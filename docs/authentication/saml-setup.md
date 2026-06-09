@@ -1,6 +1,6 @@
 # SAML 2.0 Setup
 
-This topic describes how to configure SAML 2.0 federation between IdentraCore IAM (as the Identity Provider) and an external application (as the Service Provider).
+This section describes how to configure SAML 2.0 federation between IdentraCore IAM (as the Identity Provider) and an external application (as the Service Provider).
 
 ## Before You Begin
 
