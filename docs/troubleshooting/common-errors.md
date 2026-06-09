@@ -1,6 +1,6 @@
 # Common Errors
 
-This topic lists common errors and their resolution steps.
+This topic lists errors and their resolution steps.
 
 ---
 
