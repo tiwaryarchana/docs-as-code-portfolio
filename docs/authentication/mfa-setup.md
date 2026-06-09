@@ -5,7 +5,7 @@ Multi-Factor Authentication (MFA) adds a second layer of verification after pass
 ## Supported MFA Methods
 
 | Method | Description | Recommended For |
-|---|---|---|
+| --- | --- | --- |
 | **TOTP** | Time-based one-time passwords via authenticator apps (Google Authenticator, Authy) | Most users |
 | **Push Notification** | Approve login via the IdentraCore mobile app | High-volume users |
 | **Hardware Token (FIDO2)** | Physical security keys (YubiKey, etc.) | Privileged accounts |
@@ -36,7 +36,7 @@ On first login after MFA is enforced, users are prompted to enroll. The enrollme
 
 To pre-enroll users or reset a user's MFA:
 
-```
+```text
 Admin Console → Users → [User] → Security → MFA → Reset
 ```
 

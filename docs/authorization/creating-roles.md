@@ -1,7 +1,6 @@
 # Creating Roles
 
-This section describes how to create and manage custom roles in IdentraCore IAM.
-
+This topic describes how to create and manage custom roles in IdentraCore IAM.
 ## Before You Begin
 
 - You need the `policy:write` permission or the `super-admin` role.
